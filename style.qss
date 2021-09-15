@@ -1,0 +1,120 @@
+/*===========================================================================
+ * QWidget
+ *===========================================================================*/
+QWidget {
+  background: "transparent";
+  font-family: "Segoe UI";
+  font-size: 14px;
+  color: rgba(255, 255, 255, 190);
+  padding: 0px;
+  background: rgba(0, 0, 0, 2);
+}
+
+/*===========================================================================
+  * QPushButton
+  *===========================================================================*/
+QPushButton {
+  border: 2px solid transparent;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 60);
+}
+
+QPushButton:hover {
+  border: 2px solid rgba(0, 0, 0, 120);
+}
+
+QPushButton:pressed {
+  border: 2px solid transparent;
+  background: rgba(0, 0, 0, 120);
+}
+
+/*===========================================================================
+  * QLineEdit
+  *===========================================================================*/
+
+QLineEdit {
+  border: 2px solid rgba(0, 0, 0, 60);
+  padding: 2px;
+  border-radius: 4px;
+}
+
+QLineEdit[text=""]{
+  color: gray;
+}
+
+QLineEdit:hover {
+  border: 2px solid rgba(0, 0, 0, 120);
+}
+
+QLineEdit:focus {
+  background: rgba(0, 0, 0, 60);
+}
+
+/*===========================================================================
+  * QScrollArea
+  *===========================================================================*/
+QScrollArea {
+  background: rgba(0, 0, 0, 60);
+  border: none;
+  padding: 8px;
+}
+
+QScrollBar:vertical {
+	width: 4px;
+}
+
+QScrollBar::handle {
+  background: rgba(255,255,255,60);
+  border-radius: 2px;
+}
+QScrollBar::handle:hover {
+  background: rgba(255,255,255,120);
+}
+
+QScrollBar:vertical,
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical,
+QScrollBar::up-arrow:vertical,
+QScrollBar::down-arrow:vertical,
+QScrollBar::sub-line:vertical,
+QScrollBar::add-line:vertical {
+  background: transparent;
+}
+
+/*===========================================================================
+ * QLabel
+ *===========================================================================*/
+QLabel {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 4px;
+}
+
+/*===========================================================================
+ * QMenu
+ *===========================================================================*/
+QMenu {
+  border-radius: 8px;
+}
+
+QMenu::item {
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 16px;
+  border: 2px solid transparent;
+  background: rgba(0, 0, 0, 60);
+}
+
+QMenu::item:selected {
+  background: rgba(0, 0, 0, 90);
+  border: 2px solid rgba(0, 0, 0, 120);
+}
+
+QMenu::item:pressed {
+  border: 2px solid transparent;
+  background: rgba(0, 0, 0, 120);
+}
